@@ -1,12 +1,12 @@
 class ssh::server(
-  $options = {}
+  $monitor  = true,
+  $options  = {}
 ) {
   $defaults = {
     'PasswordAuthentication'  => 'no',
     'PermitRootLogin'         => 'no',
     'Port'                    => '22',
   }
-
   $options_real = merge($defaults, $options)
 
   include ssh::params::server

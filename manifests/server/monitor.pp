@@ -1,7 +1,9 @@
 class ssh::server::monitor {
-  monitor::function::process { $name:
-    description => 'SSH Server',
-    process     => $ssh::params::server::processname,
+  if ($ssh::server::monitor) {
+    monitor::function::process { $name:
+      description => 'SSH Server',
+      process     => $ssh::params::server::processname,
+    }
   }
 }
 

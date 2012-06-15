@@ -3,6 +3,10 @@ class ssh::params::server inherits ssh::params {
     default => '/etc/ssh/sshd_config',
   }
 
+  $hasrestart = $::operatingsystem ? {
+    default => true,
+  }
+
   $hasstatus = $::operatingsystem ? {
     default => true,
   }
