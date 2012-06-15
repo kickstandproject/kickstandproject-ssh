@@ -1,4 +1,4 @@
-name    'kickstand-ssh'
+name    'kickstandproject-ssh'
 version '0.0.1'
 author 'Paul Belanger'
 license 'GPLv2'
