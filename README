@@ -1,4 +1,5 @@
-kickstandproject-ssh
+kickstandproject-ssh https://secure.travis-ci.org/kickstandproject/kickstandproject-ssh.png
+
 ====================
 
 Copyright (C) 2012, PolyBeacon, Inc.
