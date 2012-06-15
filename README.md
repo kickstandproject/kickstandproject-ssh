@@ -1,4 +1,4 @@
-kickstandproject-ssh
+kickstandproject-ssh - [![Build Status](https://secure.travis-ci.org/kickstandproject/kickstandproject-ssh.png)](http://travis-ci.org/kickstandproject/kickstandproject-ssh)
 ====================
 
 Copyright (C) 2012, PolyBeacon, Inc.
@@ -13,5 +13,3 @@ your use.
 This program is free software, distributed under the terms
 of the GNU General Public License Version 2. See the LICENSE
 file at the top of the source tree.
-
-[![Build Status](https://secure.travis-ci.org/kickstandproject/kickstandproject-ssh.png)](http://travis-ci.org/kickstandproject/kickstandproject-ssh)
