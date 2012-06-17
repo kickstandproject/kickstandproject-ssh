@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe 'ssh::server' do
+describe 'ssh::server', :type => :class do
   context 'on Ubuntu 12.04 (Precise)' do
     let(:facts) { { 
       :lsbdistcodename  => 'precise',
@@ -38,11 +38,26 @@ describe 'ssh::server' do
 
     it do
       should contain_service('ssh').with({
-        'ensure'      => 'running',
+        'ensure'      => true,
         'enable'      => true,
         'hasstatus'   => true,
         'hasrestart'  => true,
       })
+    end
+
+    context 'service disabled' do
+      let(:params) { {
+        :enable   => false,
+        :monitor  => false,
+      } }
+      it do
+        should contain_service('ssh').with({
+          'ensure'      => false,
+          'enable'      => false,
+          'hasstatus'   => true,
+          'hasrestart'  => true,
+        })
+      end
     end
   end
 end

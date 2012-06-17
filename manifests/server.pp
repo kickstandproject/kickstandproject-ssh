@@ -1,4 +1,5 @@
 class ssh::server(
+  $enable   = true,
   $monitor  = true,
   $options  = {}
 ) {
