@@ -1,6 +1,11 @@
-kickstandproject-ssh - [![Build Status](https://secure.travis-ci.org/kickstandproject/kickstandproject-ssh.png)](http://travis-ci.org/kickstandproject/kickstandproject-ssh)
-====================
+# kickstandproject-ssh 
+[![Build Status](https://secure.travis-ci.org/kickstandproject/kickstandproject-ssh.png)](http://travis-ci.org/kickstandproject/kickstandproject-ssh)
 
+## Usage
+
+    class { 'ssh::server': }
+
+# License
 Copyright (C) 2012, PolyBeacon, Inc.
 Paul Belanger <paul.belanger@polybeacon.com>
 
