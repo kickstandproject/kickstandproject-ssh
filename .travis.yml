@@ -12,5 +12,7 @@ branches:
 env:
   - PUPPET_VERSION=2.7.11
 notifications:
-  - "irc.freenode.org#kickstand-dev"
+  irc:
+    channels:
+      - "irc.freenode.org#kickstand-dev"
 gemfile: .gemfile
