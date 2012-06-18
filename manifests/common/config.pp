@@ -4,7 +4,6 @@ class ssh::common::config {
     group   => $ssh::params::group,
     mode    => $ssh::params::mode,
     owner   => $ssh::params::owner,
-    require => Class['ssh::common::install'],
   }
 }
 
