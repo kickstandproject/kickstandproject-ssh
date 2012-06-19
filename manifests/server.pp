@@ -3,6 +3,8 @@ class ssh::server(
   $monitor  = true,
   $options  = {}
 ) {
+  require ssh::client
+
   $defaults = {
     'PasswordAuthentication'  => 'no',
     'PermitRootLogin'         => 'no',
