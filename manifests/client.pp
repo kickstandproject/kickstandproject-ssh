@@ -2,9 +2,9 @@ class ssh::client(
   $options  = {}
 ) {
   $defaults = {
-    'HashKnownHosts'            => 'yes',
     'GSSAPIAuthentication'      => 'yes',
     'GSSAPIDelegateCredentials' => 'no',
+    'HashKnownHosts'            => 'yes',
     'SendEnv'                   => 'LANG LC_*',
   }
   $options_real = merge($defaults, $options)
