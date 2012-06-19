@@ -1,3 +1,33 @@
+# == Class: ssh::server
+#
+# This class manages the SSH server
+#
+# === Parameters
+#
+# [*enable*]
+#
+# [*monitor*]
+#
+# [*options*]
+#
+# === Variables
+#
+# === Examples
+#
+#  class { 'ssh::server': }
+#
+# === Authors
+#
+# Paul Belanger <paul.belanger@polybeacon.com>
+#
+# === Copyright
+#
+# Copyright (C) 2012, PolyBeacon, Inc.
+#
+# This program is free software, distributed under the terms
+# of the GNU General Public License Version 2. See the LICENSE
+# file at the top of the source tree.
+#
 class ssh::server(
   $enable   = true,
   $monitor  = true,
