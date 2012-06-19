@@ -12,7 +12,7 @@ describe 'ssh::client', :type => :class do
       should contain_file('/etc/ssh').with({
         'ensure'  => 'directory',
         'group'   => 'root',
-        'mode'    => '0600',
+        'mode'    => '0644',
         'owner'   => 'root',
       })
     end
@@ -21,7 +21,7 @@ describe 'ssh::client', :type => :class do
       should contain_file('/etc/ssh/ssh_config').with({
         'ensure'  => 'file',
         'group'   => 'root',
-        'mode'    => '0600',
+        'mode'    => '0644',
         'owner'   => 'root',
       })
     end

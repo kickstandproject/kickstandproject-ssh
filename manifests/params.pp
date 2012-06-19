@@ -8,7 +8,7 @@ class ssh::params {
   }
 
   $mode = $::operatingsystem ? {
-    default => '0600',
+    default => '0644',
   }
 
   $owner = $::operatingsystem ? {
