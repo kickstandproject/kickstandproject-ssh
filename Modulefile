@@ -1,5 +1,5 @@
 name    'kickstandproject-ssh'
-version '0.0.5'
+version '0.0.2'
 author 'Paul Belanger'
 license 'GPLv2'
 summary 'UNKNOWN'
