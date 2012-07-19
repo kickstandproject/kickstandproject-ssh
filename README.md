@@ -5,6 +5,8 @@
 
     class { 'ssh::server': }
 
+    class { 'ssh::client': }
+
 # License
 Copyright (C) 2012, PolyBeacon, Inc.
 Paul Belanger <paul.belanger@polybeacon.com>
