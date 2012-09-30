@@ -8,8 +8,6 @@ describe 'ssh::server', :type => :class do
       :operatingsystem  => 'Ubuntu',
     } }
 
-    let(:params) { { :monitor => false } }
-
     it do
       should_not contain_class('ssh::server::monitor')
     end

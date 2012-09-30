@@ -30,7 +30,7 @@
 #
 class ssh::server(
   $enable   = true,
-  $monitor  = true,
+  $monitor  = false,
   $options  = {}
 ) {
   require ssh::client
