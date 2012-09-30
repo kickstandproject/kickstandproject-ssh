@@ -25,8 +25,8 @@
 # Copyright (C) 2012, PolyBeacon, Inc.
 #
 # This program is free software, distributed under the terms
-# of the GNU General Public License Version 2. See the LICENSE
-# file at the top of the source tree.
+# of the Apache License, Version 2.0. See the LICENSE file at
+# the top of the source tree.
 #
 class ssh::server(
   $enable   = true,
